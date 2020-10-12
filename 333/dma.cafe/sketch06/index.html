@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UCLA DMA Fall 2020 Lecture Series</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #0F0F0F;
+      color: #F0F0F0;
+      font-family: monospace;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      margin: 0;
+    }
+
+    img { max-width: 100%; }
+
+    .slide {
+      padding: 30px 15% 0;
+    }
+
+    .slide:last-of-type {
+      padding-bottom: 30px;
+    }
+
+    footer {
+      margin: 30px 15px 15px;
+    }
+
+    area.external {
+      cursor: ne-resize;
+    }
+
+    @media(max-width: 900px) {
+      nav {
+        display: none;
+      }
+      .slide {
+        padding: 15px 9% 0;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="slide">
+  <img src="images/03-grid.jpg" usemap="#nav-map">
+  <map name="nav-map">
+      <area target="" alt="Carmen Argote, October 16, 2020 @ 1:30pm PST" title="Carmen Argote, October 16, 2020 @ 1:30pm PST" href="#carmen" coords="810,829,98,91" shape="rect" onMouseOver="MM_swapImage('Image1','','images/03-grid-hover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+      <area class="external" target="_blank" alt="UCLA DMA Salon (online)" title="UCLA DMA Salon (online)" href="http://dma.ucla.edu/events/calendar/" coords="2309,568,1592,87" shape="rect">
+      <area class="external" target="_blank" alt="Add this calendar of events" title="Add this calendar of events" href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" coords="1601,615,2311,1090" shape="rect">
+      <area target="" alt="About www.dma.cafe" title="About www.dma.cafe" href="#about-www-dma-cafe" coords="2307,1611,1601,1130" shape="rect">
+  </map>
+</nav>
+
+<section id="carmen" class="slide">
+  <img src="images/03-carmen.jpg" usemap="#carmen-map">
+  <map name="carmen-map">
+      <area target="_blank" class="external" alt="add to calendar" title="add to calendar" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Nzg4ZWpxNHBramo1N25jY2dhY2J2bXE1aG8ga21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZw&amp;tmsrc=kms92f6sbjd7vghgeb3fqh2hec%40group.calendar.google.com" coords="572,1104,1853,1378" shape="rect">
+  </map>
+</section>
+
+<section id="about-www-dma-cafe" class="slide">
+  <img src="images/03-about-test.png">
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.image.maps.js"></script>
+<script>
+
+  $(document).ready(function(e) {
+
+    // image maps
+    $('img[usemap]').rwdImageMaps();
+    
+  });
+
+</script>
+
+</body>
+
+</html>

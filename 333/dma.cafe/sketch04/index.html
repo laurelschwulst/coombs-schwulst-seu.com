@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UCLA DMA Fall 2020 Lecture Series</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #0F0F0F;
+      /* background: #3F6BB3; */
+      text-align: center;
+      margin: 0;
+    }
+
+    img { max-width: 100%; }
+
+    .slide {
+      height: 100%;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="slide">
+  <img src="images/02-grid-medium.jpg" usemap="#image-map">
+  <map name="image-map">
+      <area target="" alt="One" title="One" href="#one" coords="327,225,34,28" shape="rect">
+      <area target="" alt="Two" title="Two" href="#two" coords="362,29,642,238" shape="rect">
+      <area target="_blank" alt="UCLA DMA Salon" title="UCLA DMA Salon" href="http://dma.ucla.edu/events/calendar/" coords="965,237,671,31" shape="rect">
+      <area target="" alt="Add this calendar of events" title="Add this calendar of events" href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" coords="657,479,978,692" shape="rect">
+  </map>
+</nav>
+
+<section id="one" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<section id="two" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<section id="three" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.image.maps.js"></script>
+<script>
+
+  $(document).ready(function(e) {
+
+    // image maps
+    $('img[usemap]').rwdImageMaps();
+
+    // height of image on load
+    var window_height = $(window).height();
+	  var window_width = $(window).width();
+    $('.slide img').css('max-height', window_height - 48).show();
+    
+  });
+
+</script>
+
+</body>
+
+</html>

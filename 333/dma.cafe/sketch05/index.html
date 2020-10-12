@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UCLA DMA Fall 2020 Lecture Series</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #0F0F0F;
+      color: #F0F0F0;
+      font-family: monospace;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      margin: 0;
+    }
+
+    img { max-width: 100%; }
+
+    .slide {
+      padding: 30px 15% 0;
+    }
+
+    .slide:last-of-type {
+      padding-bottom: 30px;
+    }
+
+    footer {
+      margin: 30px 15px 15px;
+    }
+
+    @media(max-width: 900px) {
+      nav {
+        display: none;
+      }
+      .slide {
+        padding: 15px 9% 0;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="slide">
+  <img src="images/02-grid-medium.jpg" usemap="#image-map">
+  <map name="image-map">
+    <area target="" alt="Carmen Argote" title="Carmen Argote" href="#carmen" coords="1010,726,42,48" shape="rect">
+    <area target="" alt="Kit Galloway" title="Kit Galloway" href="#kit" coords="1073,58,1964,734" shape="rect">
+    <area target="" alt="Daniël Maarleveld &amp; Mitch Paone" title="Daniël Maarleveld &amp; Mitch Paone" href="#daniel-mitch" coords="1935,2145,53,806" shape="rect">
+    <area target="_blank" alt="UCLA DMA Salon (online)" title="UCLA DMA Salon (online)" href="http://dma.ucla.edu/events/calendar/" coords="2033,77,2958,753" shape="rect">
+    <area target="" alt="Add this calendar of events" title="Add this calendar of events" href="https://calendar.google.com/calendar/u/0?cid=a21zOTJmNnNiamQ3dmdoZ2ViM2ZxaDJoZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" coords="1998,1469,2947,2137" shape="rect">
+    <area target="" alt="About www.dma.cafe" title="About www.dma.cafe" href="#about-www-dma-cafe" coords="2027,825,2947,1432" shape="rect">
+  </map>
+</nav>
+
+<section id="carmen" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<section id="kit" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<section id="daniel-mitch" class="slide">
+  <img src="images/02-artist-medium.jpg">
+</section>
+
+<!-- <footer>
+  lorem ipsum dolor sit :)
+</footer> -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.image.maps.js"></script>
+<script>
+
+  $(document).ready(function(e) {
+
+    // image maps
+    $('img[usemap]').rwdImageMaps();
+    
+  });
+
+</script>
+
+</body>
+
+</html>
