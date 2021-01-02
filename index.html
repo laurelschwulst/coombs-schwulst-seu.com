@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>CSS</title>
 
-<head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-  <title>CSS</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="Author" content="Laura Coombs, Laurel Schwulst, Mindy Seu" />
+    <meta
+      name="Description"
+      content="CSS is the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
+    />
 
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta property="og:title" content="CSS, Inc." />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="CSS the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
+    />
+    <meta
+      property="og:image"
+      content="https://coombs-schwulst-seu.com/images/deer.jpg"
+    />
+    <meta property="og:url" content="https://coombs-schwulst-seu.com" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="Author" content="Laura Coombs, Laurel Schwulst, Mindy Seu" />
-  <meta name="Description" content="CSS, Inc. is the New York-based consultancy run by Laura Coombs, Laurel Schwulst, and Mindy Seu." />
+    <meta name="twitter:title" content="CSS" />
+    <meta
+      name="twitter:description"
+      content="CSS the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
+    />
+    <meta
+      name="twitter:image"
+      content="https://coombs-schwulst-seu.com/images/deer.jpg"
+    />
 
-  <meta property="og:title" content="CSS, Inc." />
-  <meta property="og:type" content="website" />
-  <meta name="description" content="CSS is the New York-based consultancy run by Laura Coombs, Laurel Schwulst, and Mindy Seu." />
-  <meta property="og:image" content="https://coombs-schwulst-seu.com/images/waterfall.jpg" />
-  <meta property="og:url" content="https://coombs-schwulst-seu.com" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <meta name="twitter:title" content="CSS, Inc." />
-  <meta name="twitter:description" content="CSS is the New York-based consultancy run by Laura Coombs, Laurel Schwulst, and Mindy Seu.">
-  <meta name="twitter:image" content="https://coombs-schwulst-seu.com/images/waterfall.jpg" />
+    <!-- analytics: start -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-15551934-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <link rel="stylesheet" href="css/style.css" />
+      gtag("config", "UA-15551934-6");
+    </script>
+    <!-- analytics: end -->
+  </head>
 
-  <!-- analytics: start -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15551934-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-15551934-6');
-  </script>
-  <!-- analytics: end -->
-
-</head>
-
-<!--
+  <!--
 
 
                       .      .       .       .
@@ -59,86 +79,153 @@
 
 -->
 
-<body>
+  <body>
+    <section class="letter">
+      <!-- waterfall: start -->
+      <div class="waterfall-container">
+        <img
+          src="images/deer.jpg"
+          alt="A deer prancing in the ocean kicks its back two legs up"
+        />
+      </div>
+      <!-- waterfall: end -->
 
-<section class="letter">
+      <!-- letter: start -->
+      <article class="letter">
+        <p class="intro-one">
+          CSS<br />
+          January 1, 2021<br />
+        </p>
 
-  <!-- waterfall: start -->
-  <div class="waterfall-container">
-    <img src="images/waterfall.jpg" alt="A large waterfall with a rainbow surrounded both sides by mountains, with a small rainbow appearing in front" />
-  </div>
-  <!-- waterfall: end -->
+        <p class="intro-two">⋱</p>
 
-  <!-- letter: start -->
-  <article class="letter">
+        <p>
+          On this first day of 2021, we’re a year in, and we’re happy to
+          announce we’ve had some realizations regarding how we work together.
+        </p>
+        <p>We began by creating this chart:</p>
+      </article>
+      <table>
+        <thead>
+          <td>CSS</td>
+          <td>Independent domains</td>
+          <td>Sun sign</td>
+          <td>Eye color</td>
+          <td>Birth</td>
+          <td>Height</td>
+          <td>URL</td>
+        </thead>
+        <tr>
+          <td>Laura <u>C</u>oombs</td>
+          <td>books, typography, materiality</td>
+          <td>Cancer</td>
+          <td>blue</td>
+          <td>1984 summer</td>
+          <td>5' 6.5"</td>
+          <td>
+            <a href="http://lauracoombs.com" target="_blank">lauracoombs.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Laurel <u>S</u>chwulst</td>
+          <td>websites, metaphors, world-building</td>
+          <td>Pisces</td>
+          <td>hazel</td>
+          <td>1988 winter</td>
+          <td>5' 4"</td>
+          <td>
+            <a href="https://laurelschwulst.com" target="_blank"
+              >laurelschwulst.com</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Mindy <u>S</u>eu</td>
+          <td>archives, politics, creating connections</td>
+          <td>Taurus</td>
+          <td>brown</td>
+          <td>1991 spring</td>
+          <td>5' 7.5"</td>
+          <td>
+            <a href="https://mindyseu.com" target="_blank">mindyseu.com</a>
+          </td>
+        </tr>
+      </table>
+      <article>
+        <p>
+          This chart maps our unique and complementary aspects. In addition to
+          conducting research on ourselves, we also spent this first year
+          exploring gift-giving and citations across time and space.
+        </p>
+        <p>
+          As 2020 passed, we noticed our birthdays cascaded throughout the
+          year—with Laurel’s in the winter, Mindy’s in the spring, and Laura’s
+          in the summer. Our gifts for each other’s birthdays were some of our
+          first projects. We liked that the gifts involved surprise, observation
+          of the recipient, and reflection of the givers. The gifts slowly built
+          on each other. Laura’s birthday was last, and her gift may have been
+          the best: a time capsule that slowly revealed memories from her
+          friends and family presented as a year-long google calendar.
+        </p>
 
-    <p class="intro-one">
-      CSS<br />
-      January 1, 2020<br />
-    </p>
+        <p>
+          Our <a href="2020.html">letter from last year</a> ended with the
+          phrase “intimacy without proximity” … which not only became a uniting
+          and guiding principle for us but also a reflection of a new world in a
+          global pandemic. We researched the phrase’s beginnings and realized an
+          interwoven tree of influence rather than a single source:
+        </p>
 
-    <p class="intro-two">
-      …
-    </p>
-
-    <p>
-      On this first day of 2020, we are happy to announce CSS—a new, New York-based consultancy run by Laura <u>C</u>oombs, Laurel <u>S</u>chwulst, and Mindy <u>S</u>eu.
-    </p>
-
-    <p>
-      We are three friends who met through our work in design and education. Even though we think of ourselves as quite different, we have wanted to work together for a long time now … Somehow, the first day of this special new year felt like the right time to tell you … 2020—the year we all have perfect vision and feel clearly, putting our complementary strengths together …
-    </p>
-
-    <p>
-      Although our name CSS may suggest otherwise (“cascading style sheets”), we are not a design studio. Instead, we want to utilize our professional and personal experiences to strategize creative projects via research, reflection, and direction … We are interested in working with local and distant individuals, companies, and institutions (and others that fall outside of these categories!) on projects such as identities, publications, and environments (offline and on) … We have some other exciting announcements on the horizon …
-    </p>
-
-    <p style="margin-top: 3em;">
-      Laura, Laurel, Mindy<br />
-      <!-- coombs-schwulst-seu.com -->
-    </p>
-
-  </article>
-  <!-- letter: end -->
-
-</section>
-
-
-<section class="email">
-
-  <!-- our email: begin -->
-  <div class="ours">
-    <label>Our email</label>
-    <em>info@coombs-schwulst-seu.com</em>
-  </div>
-  <!-- our email: end--->
-
-  <!-- your email: begin -->
-<!--   <div class="yours">
-    <label>Your email</label>
-    <form name="form" method="post" action="subscribe/index.php">
-      <input name="email" type="email" autocomplete="off" required>
-      <button type="submit" name="subscribe" id="submit-form">Subscribe</button>
-    </form>
-  </div> -->
-  <!-- your email: end--->
-
-</section>
-
-
-
-<!-- quote: begin -->
-<section class="quote">
-<pre style="font-size: 0.8em; line-height: 1.4;">
+        <section class="quote" style="margin-top: 2.4em; margin-bottom: 2.6em">
+          <pre style="font-size: 0.8em; line-height: 1.4">
 “intimacy without proximity ... ” . Donna Haraway
                                      . Jacob Metcalf
-                                        . Karen Barad
-</pre>
-</section>
-<!-- quote: end--->
+                                        . Karen Barad</pre
+          >
+        </section>
 
-<!-- todo: insert analytics -->
+        <p>
+          Our symbol ⋱ became more important than we expected, and we’ve been
+          exploring its roots ever since. When used in a mathematical context,
+          the ellipsis is used to mean “and so forth.” It often fills in missing
+          values or indicates trailing off into infinity. On March 1st, 2020, we
+          officially
+          <a
+            href="https://twitter.com/unicode/status/1234621603704492032"
+            target="_blank"
+            >adopted</a
+          >
+          the character ⋱ (Down Right Diagonal Ellipsis, U+22F1) from the
+          Unicode Foundation.
+        </p>
 
-</body>
+        <p>
+          We each have distinct practices that complement the others, so we
+          consider CSS an alliance of separate but interconnected islands. As a
+          group, we only work on projects we couldn’t do alone. Time is our
+          favorite medium.
+        </p>
 
+        <p>We have some other exciting announcements on the horizon …</p>
+
+        <p style="margin-top: 3em">Laura, Laurel, Mindy<br /></p>
+      </article>
+      <!-- letter: end -->
+    </section>
+
+    <!-- quote: begin -->
+    <section class="quote">
+      <pre style="font-size: 0.8em; line-height: 1.4">
+“move at the speed of trust” — adrienne maree brown</pre
+      >
+    </section>
+    <section class="quote" style="margin-top: 2.4em">
+      <pre style="font-size: 0.8em; line-height: 1.4">
+“An ecosystem is not just a list of living things ... 
+ It’s the set of relationships between those living things.” — adrienne maree brown ⋱ Farhad Ebrahimi </pre
+      >
+    </section>
+
+    <!-- quote: end--->
+  </body>
 </html>
