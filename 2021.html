@@ -103,7 +103,7 @@
           On this first day of 2021, we’re a year in, and we’re happy to
           announce we’ve had some realizations regarding how we work together.
         </p>
-        <p>We began this process by creating this chart:</p>
+        <p>We began by creating this chart:</p>
       </article>
       <table>
         <thead>
@@ -225,7 +225,31 @@
       <!-- our email: end--->
 
       <!-- your email: begin -->
-      <!-- <div class="yours">
+      <script
+        type="text/javascript"
+        src="//sgwidget.leaderapps.co/js/sendgrid-widget.js"
+      ></script>
+      <div
+        id="sendgrid-subscription-widget"
+        class="sendgrid-subscription-widget"
+      >
+        <form
+          id="sg-widget"
+          data-token="e2c37163dc95b4351b82ab699ae28b29"
+          onsubmit="return false;"
+        >
+          <div class="sg-response" id="sg-response"></div>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          /><input type="submit" id="sg-submit-btn" value="“Subscribe”" />
+        </form>
+      </div>
+
+      <div class="yours">
         <label>Your email</label>
         <form name="form" method="post" action="subscribe/index.php">
           <input name="email" type="email" autocomplete="off" required />
@@ -233,7 +257,7 @@
             Subscribe
           </button>
         </form>
-      </div> -->
+      </div>
       <!-- your email: end--->
     </section>
 
