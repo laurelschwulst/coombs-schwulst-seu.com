@@ -109,8 +109,32 @@ section.email {
   display: none;
 }
 
-@media screen and (max-width: 785px) {
+table,
+tr,
+td,
+thead {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
 
+thead,
+td {
+  padding: 0.85em;
+  padding-bottom: 0.65em;
+  padding-right: 0.9em;
+}
+
+table {
+  margin: 2.5em 0;
+  font-size: 0.8em;
+  line-height: 1.1;
+}
+
+a {
+  color: white;
+}
+
+@media screen and (max-width: 785px) {
   body {
     margin: 30px;
     font-size: 15px;
@@ -144,5 +168,4 @@ section.email {
   input {
     width: 100%;
   }
-
 }
