@@ -149,6 +149,12 @@ hr {
   border-bottom: 1px solid white;
 }
 
+img.waterfall-bg {
+  background: url('../images/waterfall-moving.gif');
+  background-size: 200% auto;
+  background-position: bottom left;
+}
+
 @media screen and (max-width: 785px) {
   body {
     margin: 30px;
