@@ -36,6 +36,10 @@ p.intro-two {
   margin-bottom: 2em;
 }
 
+p.outro {
+  margin: 2em 0;
+}
+
 section {
   margin-top: 6em;
 }
@@ -97,6 +101,10 @@ section.email {
   margin-top: 5.4em;
 }
 
+section.quote.small {
+  margin: 1.75em 0;
+}
+
 .ours label {
   margin-bottom: 0.15em;
 }
@@ -132,6 +140,12 @@ table {
 
 a {
   color: white;
+}
+
+hr {
+  margin: 2.5em 0;
+  border: 0;
+  border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 785px) {
