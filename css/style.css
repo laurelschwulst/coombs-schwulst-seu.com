@@ -153,6 +153,62 @@ img.waterfall-bg {
   background: url('../images/waterfall-moving.gif');
   background-size: 225% auto;
   background-position: bottom left;
+  /* animation-duration: 60s;
+  animation-name: waterfall; */
+}
+
+@keyframes waterfall {
+  0% {
+    background-position: bottom left;
+  }
+  24% {
+    background-position: bottom left;
+  }
+  25% {
+    background-position: bottom right;
+  }
+  49% {
+    background-position: bottom right;
+  }
+  50% {
+    background-position: top right;
+  }
+  74% {
+    background-position: top right;
+  }
+  75% {
+    background-position: top left;
+  }
+  99% {
+    background-position: top left;
+  }
+  100% {
+    background-position: bottom left;
+  }
+}
+
+.next-prev {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.next-prev a {
+  display: inline-block;
+  text-decoration: none;
+  font-famiy: sans-serif;
+  /* border: 1px solid rgba(255,255,255,0.2); */
+  padding: 0 4px;
+  border-radius: 50%;
+  color: rgba(255,255,255,0.2);
+}
+
+.next-prev a:hover {
+  color: rgba(255,255,255,1);
 }
 
 @media screen and (max-width: 785px) {
