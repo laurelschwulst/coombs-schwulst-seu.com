@@ -211,6 +211,12 @@ img.waterfall-bg {
   color: rgba(255,255,255,1);
 }
 
+iframe {
+  width: 100%;
+  height: 75vh;
+  border: 0;
+}
+
 @media screen and (max-width: 785px) {
   body {
     margin: 30px;
