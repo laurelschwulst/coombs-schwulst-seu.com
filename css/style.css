@@ -218,6 +218,7 @@ iframe {
 }
 
 @media screen and (max-width: 785px) {
+  
   body {
     margin: 30px;
     font-size: 15px;
@@ -251,4 +252,9 @@ iframe {
   input {
     width: 100%;
   }
+
+  #iframe {
+    display: none;
+  }
+
 }
