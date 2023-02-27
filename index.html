@@ -11,18 +11,9 @@
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
-    <meta name="Author" content="Laura Coombs, Laurel Schwulst, Mindy Seu" />
-    <meta
-      name="Description"
-      content="CSS is the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
-    />
-
     <meta property="og:title" content="CSS" />
     <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="CSS is the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
-    />
+    
     <meta
       property="og:image"
       content="https://coombs-schwulst-seu.com/images/three-bears.png"
@@ -31,14 +22,21 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="twitter:title" content="CSS" />
-    <meta
-      name="twitter:description"
-      content="CSS is the alliance of Laura Coombs, Laurel Schwulst, and Mindy Seu."
-    />
+
     <meta
       name="twitter:image"
       content="https://coombs-schwulst-seu.com/images/three-bears.png"
     />
+    
+    <style>
+      html, body { height: 100%; }
+      body { margin: 0; padding: 0; }
+      #end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
 
     <link rel="stylesheet" href="css/style.css?111333555" />
 
@@ -59,78 +57,9 @@
     <!-- analytics: end -->
   </head>
 
-  <!--
-    test
-
-                      .      .       .       .
-  .   .       .          .      . .      .         .          .    .
-         .       .         .    .   .         .         .            .
-    .   .    .       .         . . .        .        .     .    .
- .          .   .       .       . .      .        .  .              .
-      .  .    .  .       .     . .    .       . .      .   .        .
- .   .       .    . .      .    . .   .      .     .          .     .
-    .            .    .     .   . .  .     .   .               .
-     .               .  .    .  . . .    .  .                 .
-                        . .  .  . . .  . .
-                            . . . . . .
-                              . . . .
-                               . . .
-                                ...
-
--->
-
   <body>
-    <section class="letter">
-
-      <!-- letter: start -->
-      <article class="letter">
-        <!-- waterfall: start -->
-      <div class="waterfall-container">
-        <img
-          src="images/three-bears.png"
-          alt="Three bears near a waterfall"
-        />
-      </div>
-      <!-- waterfall: end -->
-        <p class="intro-one">
-          CSS<br />
-          January 1, 2023
-          <span class="next-prev">
-            <a href="2022.html">←</a>
-          </span>
-        </p>
-
-        <p class="intro-two">⋱</p>
-
-        <p>
-            It’s now 2023, three years in. Three seems to be our number.
-        </p>
-
-        <p>
-            This past year, we published an essay titled “Multidimensional Citation” about our thinking behind the “three dots” ⋱ in <i>The Serving Library Annual</i> 2022/23, themed on the meander. 
-        </p>
-        
-        <p>
-            <a href="https://www.servinglibrary.org/journal/17/multidimensional-citation" target="_blank">Download at the Serving Library</a>
-        </p>
-
-        <p>
-            On the horizon …
-        </p>
-
-        <p style="margin-top: 3em">Laura, Laurel, Mindy<br /></p>
-
-      </article>
-
-      <iframe src="pdfs/multidimensional-citation.pdf" id="iframe"></iframe>
-
-      <div class="waterfall-container" style="margin-top: 1em;">
-        <img
-          src="images/multidimensional-citation.png"
-          alt="Our essay in print"
-        />
-      </div>
-
-    </section>
+    <div id="end">
+      ⋱
+    </div>
   </body>
 </html>
